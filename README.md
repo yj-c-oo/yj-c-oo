@@ -17,8 +17,19 @@ RTL 설계와 UVM 검증을 중심에 두고, 그 앞뒤 단계(합성·P&R, 아
 | 2025.06 – 2025.08 | **한국반도체아카데미 (KSA)** — 파운드리향 반도체 Design 전문가 양성과정 (300H)<br>Synthesis, LEC, STA, SCAN/ATPG (PI) · Auto P&R (PD) · DRC, LVS (PV) · **원장상** (팀 1위 수료) |
 | 2022.03 – 2026.02 | **광운대학교** 전자공학과 / 인공지능반도체 연계전공 졸업 |
 | 2022.03 – 2026.02 | **전자연구회** (교내 중앙학술동아리) — MCU 기반 임베디드 작품 제작, 1년간 임원으로 운영 참여 |
+| 2022.03 – 2026.02 | **TIME** (교내 중앙학술동아리) — 영어 시사 토론 동아리 |
+| 2022.07 – 2022.08 | **동대문구 대학생 멘토링** — 고등학교 2학년 학생 대상 수학 교과목 8주간 지도 |
 
-<sub>그 외: IDEC 「SystemVerilog 검증 방법론」·「Standard Cell Based Design (RTL-to-GDSII)」 수료, ADsP, OPIc IH</sub>
+---
+
+## Certifications & Language
+
+| 항목 | 내용 | 취득 |
+|---|---|---|
+| **OPIc** (English) | **IH** (Intermediate High) | 2026.06 |
+| **데이터분석 준전문가 (ADsP)** | 한국데이터산업진흥원 | 2025.03 |
+
+<sub>단기 수료: IDEC 「SystemVerilog를 이용한 검증 방법론」, 「Standard Cell Based Design (RTL-to-GDSII)」, 「AI 반도체 센서용 PCB 설계」, NVIDIA DLI 딥러닝 기초</sub>
 
 ---
 
@@ -30,8 +41,8 @@ RTL 설계와 UVM 검증을 중심에 두고, 그 앞뒤 단계(합성·P&R, 아
 
 | 구분 | 내용 |
 |---|---|
-| Design | AMBA AXI4-Lite, APB · SPI, I2C, UART · RISC-V RV32I · FSM, FIFO, CDC, MMIO |
-| Verification | UVM · Constrained Random Verification · Functional Coverage · Virtual Sequence, Scoreboard |
+| Design | AMBA AXI4-Lite · AMBA APB · SPI · I2C · UART · RISC-V RV32I · FSM · FIFO · CDC · MMIO |
+| Verification | UVM · Constrained Random Verification · Functional Coverage · Virtual Sequence · Scoreboard |
 | RTL-to-GDS | **PI** — Synthesis, LEC, STA, SCAN/ATPG<br>**PD** — Floorplan, Powerplan, Placement, CTS, Route, Chip Finish<br>**PV** — DRC, LVS |
 
 **Tools**
@@ -59,6 +70,7 @@ RTL 설계와 UVM 검증을 중심에 두고, 그 앞뒤 단계(합성·P&R, 아
 | [**RISC-V Multi-Cycle CPU & APB Bus**](https://github.com/yj-c-oo/RV32I_Multi_APB_Peripheral) | 2026.03 | RV32I Multi-cycle CPU와 APB Master 설계, MMIO 방식 Peripheral(RAM·GPIO·UART·7-seg) 구성 | RISC-V, AMBA APB, MMIO |
 | [**RISC-V Single-Cycle CPU**](https://github.com/yj-c-oo/RISCV_RV32I_Single) | 2026.02 – 2026.03 | RV32I 37개 명령어 전체 구현, C 코드를 컴파일해 ROM 시뮬레이션으로 동작 검증 | RISC-V, SystemVerilog, gcc |
 | [**Watch/Stopwatch & 센서 제어 시스템**](https://github.com/yj-c-oo/FPGA_Stopwatch_Watch_Sensors_Control_System) | 2026.01 – 2026.02 | UART·FIFO 기반 PC 연동 Watch/Stopwatch, 초음파·온습도 센서 제어 모듈 설계 | Verilog, UART, FIFO, FSM |
+| **FPGA 기반 Adaptive Cruise Control System** | 2025.03 – 2025.06 | ToF 센서·로터리 엔코더 인터페이스, PWM 생성, PID 제어 모듈을 Verilog로 설계. HPS-FPGA 간 Lightweight AXI Bridge 구성 및 mmap 기반 데이터 전달 구현 | Verilog, AXI Bridge, PID, I2C, Quartus |
 | **암호화 가속기** | *(작성 예정)* | *(작성 예정)* | — |
 
 ### ASIC Implementation — RTL to GDS (PI · PD)
@@ -73,17 +85,9 @@ RTL 설계와 UVM 검증을 중심에 두고, 그 앞뒤 단계(합성·P&R, 아
 |---|---|---|---|
 | **20MHz 8bit Asynchronous SAR ADC** | 2025.09 – 2025.11 | StrongArm Latch Comparator 및 5-TR Buffer 설계, 전체 회로 시뮬레이션. FoM 0.0117 달성 | Cadence Virtuoso, gpdk045 |
 
-### Embedded & Vision AI
+### Deep Learning & Embedded
 
 | 프로젝트 | 기간 | 내용 | 주요 기술 |
 |---|---|---|---|
-| **Vision AI 기반 Auto Cashier System** | 2026.06 | YOLOv11m + TensorRT로 바코드 없는 실시간 상품 인식 무인 키오스크 구현 (mAP 0.988) | Jetson Orin Nano, YOLO, OpenCV |
-| **FPGA 기반 Adaptive Cruise Control System** | 2025.03 – 2025.06 | ToF 센서·로터리 엔코더 기반 계층형 PID 제어로 차간거리를 유지하는 RC카 설계. HPS-FPGA Lightweight AXI Bridge 구성 | Verilog, Quartus, PID, I2C |
-| **졸음운전 방지 자율주행 RC카** | 2024.09 – 2024.12 | 직접 수집한 8,000장 데이터로 PilotNet 기반 차선 주행 학습, 얼굴 인식 졸음 감지 경보 구현 (11팀 중 2위) | CNN, TensorFlow, Raspberry Pi |
-
----
-
-## Currently
-
-- UVM 기반 검증 환경 심화 (Register Model, Assertion)
-- AMBA AXI4 Full 프로토콜 및 SoC 구조 학습
+| [**Vision AI를 활용한 Auto Cashier System**](https://github.com/yj-c-oo/Vision_AI_Auto_Cashier) | 2026.06 | YOLOv11m 객체 검출로 바코드 없이 다수 상품을 동시 인식하는 무인 키오스크 구현. 15개 상품군 대상. 데이터 증강으로 학습셋을 3배 확장해 학습 초반 수렴 속도를 개선하고, 배포 모델(epoch 164) 기준 mAP50 0.990 / mAP50-95 0.983 달성. TensorRT 엔진으로 Jetson 온디바이스 실시간 추론 | YOLOv11m, TensorRT, OpenCV, Jetson Orin Nano |
+| **졸음운전 방지 자율주행 RC카** | 2024.09 – 2024.12 | 직접 수집한 주행 이미지 8,000장으로 PilotNet 기반 CNN 차선 주행 학습, Haar Cascade 눈 검출로 졸음 감지 경보 구현 (11팀 중 2위) | CNN, TensorFlow, OpenCV, Raspberry Pi |
